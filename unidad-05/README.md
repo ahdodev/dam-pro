@@ -38,3 +38,8 @@ https://codelearnacademy.github.io/java/leccion05/
 1. Guardar nombres en un fichero.
 2. Leer un fichero de texto.
 3. Contar líneas de un archivo.
+
+   
+## Revisión desde GitHub
+
+La entrada y salida permite comunicarse con usuarios y sistemas externos.
