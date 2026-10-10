@@ -26,3 +26,9 @@ Calcular la media de un array.
 ## Referencia
 
 https://codelearnacademy.github.io/java/leccion06/
+
+## Conceptos clave
+
+- Cuándo usar List, Set o Map.
+- Recorrido con for-each.
+- Filtrado mediante streams.
