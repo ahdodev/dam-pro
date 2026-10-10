@@ -25,3 +25,9 @@ Comprobar si un número es par.
 ## Referencia
 
 https://codelearnacademy.github.io/java/leccion03/
+
+## Conceptos clave
+
+- Diferencia entre while y do-while.
+- Selección múltiple con switch.
+- Captura de excepciones.
