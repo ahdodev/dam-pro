@@ -31,3 +31,9 @@ https://codelearnacademy.github.io/java/leccion01/
 - Diferencia entre JVM y JDK.
 - Proceso de compilación con javac.
 - Ejecución de un programa.
+
+## Ejercicios de práctica
+
+1. Comprobar la versión de Java.
+2. Compilar Hola Mundo.
+3. Explicar qué es el bytecode
