@@ -12,7 +12,7 @@ https://codelearnacademy.github.io/java/
 
 ## Autor
 
-Tu nombre y apellidos.
+Álvaro Hernández Oliva.
 
 ## Índice
 
