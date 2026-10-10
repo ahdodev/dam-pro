@@ -37,3 +37,7 @@ https://codelearnacademy.github.io/java/leccion01/
 1. Comprobar la versión de Java.
 2. Compilar Hola Mundo.
 3. Explicar qué es el bytecode
+
+## Revisión desde GitHub
+
+Entender el entorno es necesario antes de crear aplicaciones.
