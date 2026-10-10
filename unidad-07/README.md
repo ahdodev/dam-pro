@@ -26,3 +26,9 @@ Crear una jerarquía de vehículos.
 ## Referencia
 
 https://codelearnacademy.github.io/java/leccion07/
+
+## Conceptos clave
+
+- Relación entre clase base y derivada.
+- Interfaz frente a clase abstracta.
+- Polimorfismo en Java.
