@@ -43,3 +43,8 @@ https://codelearnacademy.github.io/java/leccion05/
 ## Revisión desde GitHub
 
 La entrada y salida permite comunicarse con usuarios y sistemas externos.
+
+
+## Ronda de sincronización 2
+
+Esta ronda la hago desde el equipo 2 para comprobar que el equipo 1 recibe el cambio.
