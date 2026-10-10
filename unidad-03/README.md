@@ -31,3 +31,9 @@ https://codelearnacademy.github.io/java/leccion03/
 - Diferencia entre while y do-while.
 - Selección múltiple con switch.
 - Captura de excepciones.
+
+## Ejercicios de práctica
+
+1. Comprobar si un número es par.
+2. Crear una tabla de multiplicar.
+3. Validar una entrada de usuario.
