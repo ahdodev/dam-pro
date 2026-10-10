@@ -17,6 +17,7 @@ https://codelearnacademy.github.io/java/
 ## Índice
 
 - [Unidad 01 - Introducción a Java](unidad-01/)
+- [Unidad 02 - Fundamentos de Java](unidad-02/)
 
 ## Estado
 
