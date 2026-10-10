@@ -42,3 +42,8 @@ https://codelearnacademy.github.io/java/leccion08/
 ## Revisión desde GitHub
 
 La persistencia conserva los datos más allá de la ejecución del programa.
+
+
+## Ronda de sincronización 5
+
+Lo de guardar datos en una base de datos mola, porque no se pierde nada al cerrar el programa.
