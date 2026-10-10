@@ -26,3 +26,9 @@ Guardar nombres en un fichero.
 ## Referencia
 
 https://codelearnacademy.github.io/java/leccion05/
+
+## Conceptos clave
+
+- Diferencia entre entrada y salida.
+- Lectura de ficheros de texto.
+- Tratamiento de errores de E/S.
