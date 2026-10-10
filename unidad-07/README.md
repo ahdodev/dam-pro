@@ -42,3 +42,7 @@ https://codelearnacademy.github.io/java/leccion07/
 ## Revisión desde GitHub
 
 El polimorfismo permite trabajar con distintas implementaciones.
+
+## Ronda de sincronización 4
+
+La herencia está guay porque no repites código, la clase hija ya trae lo de la madre.
