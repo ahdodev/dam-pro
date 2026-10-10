@@ -38,3 +38,7 @@ https://codelearnacademy.github.io/java/
 1. Planificar sistema de gestión de alumnos.
 2. Describir su menú de opciones.
 3. Proponer pruebas del proyecto.
+
+## Revisión desde GitHub
+
+Un proyecto completo requiere análisis, implementación y verificación.
