@@ -26,3 +26,9 @@ Planificar sistema de gestión de alumnos.
 ## Referencia
 
 https://codelearnacademy.github.io/java/
+
+## Conceptos clave
+
+- Separación de responsabilidades.
+- Validación de entradas.
+- Plan de pruebas.
