@@ -42,3 +42,7 @@ https://codelearnacademy.github.io/java/
 ## Revisión desde GitHub
 
 Un proyecto completo requiere análisis, implementación y verificación.
+
+## Ronda de sincronización 6
+
+Planificar antes de programar ahorra bastantes dolores de cabeza.
