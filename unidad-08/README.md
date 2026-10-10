@@ -38,3 +38,7 @@ https://codelearnacademy.github.io/java/leccion08/
 1. Crear una tabla de alumnos.
 2. Insertar y consultar registros.
 3. Modificar y borrar registros.
+
+## Revisión desde GitHub
+
+La persistencia conserva los datos más allá de la ejecución del programa.
