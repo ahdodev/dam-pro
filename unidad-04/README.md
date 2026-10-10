@@ -31,3 +31,9 @@ https://codelearnacademy.github.io/java/leccion04/
 - Responsabilidad de una clase.
 - Uso de atributos privados.
 - Composición entre objetos.
+
+## Ejercicios de práctica
+
+1. Crear clase Persona.
+2. Construir clase Contacto.
+3. Organizar clases por paquetes.
