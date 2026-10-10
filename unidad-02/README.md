@@ -39,3 +39,7 @@ https://codelearnacademy.github.io/java/leccion02/
 1. Conversor de Celsius a Fahrenheit.
 2. Calculadora de dos números.
 3. Cálculo de la media de tres notas.
+
+## Revisión desde GitHub
+
+Las variables y los métodos permiten construir programas reutilizables.
