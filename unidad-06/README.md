@@ -32,3 +32,10 @@ https://codelearnacademy.github.io/java/leccion06/
 - Cuándo usar List, Set o Map.
 - Recorrido con for-each.
 - Filtrado mediante streams.
+
+
+## Ejercicios de práctica
+
+1. Calcular la media de un array.
+2. Eliminar duplicados.
+3. Ordenar una lista de nombres.
