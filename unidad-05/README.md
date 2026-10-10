@@ -32,3 +32,9 @@ https://codelearnacademy.github.io/java/leccion05/
 - Diferencia entre entrada y salida.
 - Lectura de ficheros de texto.
 - Tratamiento de errores de E/S.
+
+## Ejercicios de práctica
+
+1. Guardar nombres en un fichero.
+2. Leer un fichero de texto.
+3. Contar líneas de un archivo.
