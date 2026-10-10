@@ -37,3 +37,7 @@ https://codelearnacademy.github.io/java/leccion04/
 1. Crear clase Persona.
 2. Construir clase Contacto.
 3. Organizar clases por paquetes.
+
+## Revisión desde GitHub
+
+La encapsulación ayuda a mantener un diseño claro y controlado.
