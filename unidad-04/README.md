@@ -25,3 +25,9 @@ Crear clase Persona.
 ## Referencia
 
 https://codelearnacademy.github.io/java/leccion04/
+
+## Conceptos clave
+
+- Responsabilidad de una clase.
+- Uso de atributos privados.
+- Composición entre objetos.
