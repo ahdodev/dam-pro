@@ -47,3 +47,10 @@ Las variables y los métodos permiten construir programas reutilizables.
 ## Seguimiento del equipo 1
 
 Revisión realizada desde la primera copia local.
+
+## Índice de tareas
+
+| Tarea | Descripción | Estado |
+|---|---|---|
+| Tickets | Generador de tickets | Completado |
+|---|---|---|
