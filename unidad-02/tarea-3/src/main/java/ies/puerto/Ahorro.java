@@ -20,7 +20,12 @@ public class Ahorro {
 
         System.out.print("¿Cuánto dinero tienes ahorrado? ");
         float ahorroInicial = teclado.nextFloat();
-        teclado.nextLine(); // limpia el Enter que deja nextFloat
+        while (ahorroInicial < 0) {
+            System.out.println("El ahorro no puede ser negativo.");
+            System.out.print("¿Cuánto dinero tienes ahorrado? ");
+            ahorroInicial = teclado.nextFloat();
+        }
+        teclado.nextLine();
 
         System.out.println();
         System.out.println("Hola, " + nombre + ".");
@@ -33,7 +38,12 @@ public class Ahorro {
         do {
             System.out.print("Introduce una cantidad para ahorrar: ");
             float aportacion = teclado.nextFloat();
-            teclado.nextLine(); // limpia el Enter otra vez
+            while (aportacion <= 0) {
+                System.out.println("La cantidad tiene que ser mayor que 0.");
+                System.out.print("Introduce una cantidad para ahorrar: ");
+                aportacion = teclado.nextFloat();
+            }
+            teclado.nextLine();
 
             ahorroActual = ahorroActual + aportacion;
             totalAportado = totalAportado + aportacion;
@@ -44,6 +54,16 @@ public class Ahorro {
             System.out.print("¿Deseas realizar otra aportación? (S/N): ");
             respuesta = teclado.nextLine();
         } while (respuesta.equalsIgnoreCase("S"));
+
+        System.out.println();
+        System.out.println("====================================");
+        System.out.println("         RESUMEN DEL AHORRO");
+        System.out.println("====================================");
+        System.out.println("Usuario: " + nombre);
+        System.out.println("Ahorro inicial: " + ahorroInicial + " euros");
+        System.out.println("Aportaciones realizadas: " + aportaciones);
+        System.out.println("Total aportado: " + totalAportado + " euros");
+        System.out.println("Ahorro final: " + ahorroActual + " euros");
 
     }
 }
