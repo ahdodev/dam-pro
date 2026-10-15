@@ -575,3 +575,23 @@ git commit -m "feat: ampliar conversor con centimetros a pulgadas"
 git push origin main
 ```
 
+
+---
+
+## Desarrollo y pruebas del alumno
+
+### Cómo funciona mi programa
+
+Uso un `Scanner` para leer todo lo que escribe el usuario. El nombre lo guardo en un `String`, la opción del menú y el contador de conversiones en `int`, y las distancias y resultados en `float`. Todo el menú está metido dentro de un `while (opcion != 4)`, así que se repite una y otra vez hasta que eliges salir. Dentro del `while` hay un `switch` que hace la conversión según la opción, y cada vez que sale bien le sumo 1 al contador con `conversiones++`.
+
+### Validaciones implementadas
+
+Si pones una opción que no existe (por ejemplo el 8), el `default` del `switch` dice "Opción no válida" y vuelve a salir el menú, sin sumar nada al contador. Si pones una distancia negativa, hay otro `while` que te la vuelve a pedir hasta que pongas un número mayor o igual que 0. El 0 sí vale y da 0 de resultado.
+
+### Pruebas realizadas
+
+Probé las 8 pruebas del enunciado. Con 3 km en la opción 1 me salió `Resultado = 3000.0 metros.` Con 2,5 m en la opción 2 me salió `Resultado = 250.0 centímetros.` Con 10 km en la opción 3 me salió `Resultado = 6.21371 millas.`. Al poner -5 km me dijo que la distancia no puede ser negativa y me la volvió a pedir. Con 0 m en la opción 2 me salió `Resultado = 0.0 centímetros.` y se contó como conversión. Con la opción 8 salió "Opción no válida" y el contador no subió. Con la opción 4 el programa terminó y mostró el resumen. Y haciendo tres conversiones seguidas, el contador final marcó 3.
+
+### Dificultades y soluciones
+
+Al principio me lié con el `while` y el `switch`: puse la llave de cierre del `while` antes del `switch`, así que el menú se repetía pero nunca hacía la conversión. Lo arreglé moviendo la llave para que el `switch` quedara dentro del bucle. También me daba error porque repetía nombres de variables en los `case`, y lo solucioné poniendo nombres distintos en cada uno (`kilometros`, `metros`, `km`). Y la fórmula de las millas la tenía mal, hasta que usé la del enunciado: `km * 0.621371f`.

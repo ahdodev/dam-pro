@@ -53,4 +53,4 @@ Revisión realizada desde la primera copia local.
 | Tarea | Descripción | Estado |
 |---|---|---|
 | Tickets | Generador de tickets | Completado |
-| Tarea 2 | Conversor de medidas interactivo | En desarrollo |
+| Tarea 2 | Conversor de medidas interactivo | Completado |
