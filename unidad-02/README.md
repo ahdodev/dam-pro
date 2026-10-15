@@ -54,3 +54,4 @@ Revisión realizada desde la primera copia local.
 |---|---|---|
 | Tickets | Generador de tickets | Completado |
 | Tarea 2 | Conversor de medidas interactivo | Completado |
+| [Tarea 3](tarea-3/) | Simulador de ahorro personal | En desarrollo |
