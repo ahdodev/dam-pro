@@ -20,10 +20,30 @@ public class Ahorro {
 
         System.out.print("¿Cuánto dinero tienes ahorrado? ");
         float ahorroInicial = teclado.nextFloat();
+        teclado.nextLine(); // limpia el Enter que deja nextFloat
 
         System.out.println();
         System.out.println("Hola, " + nombre + ".");
-        System.out.println("Ahorro inicial: " + ahorroInicial + " euros");
+
+        float ahorroActual = ahorroInicial;
+        float totalAportado = 0;
+        int aportaciones = 0;
+        String respuesta;
+
+        do {
+            System.out.print("Introduce una cantidad para ahorrar: ");
+            float aportacion = teclado.nextFloat();
+            teclado.nextLine(); // limpia el Enter otra vez
+
+            ahorroActual = ahorroActual + aportacion;
+            totalAportado = totalAportado + aportacion;
+            aportaciones++;
+
+            System.out.println("Aportación registrada. Ahorro actual: " + ahorroActual + " euros");
+
+            System.out.print("¿Deseas realizar otra aportación? (S/N): ");
+            respuesta = teclado.nextLine();
+        } while (respuesta.equalsIgnoreCase("S"));
 
     }
 }
