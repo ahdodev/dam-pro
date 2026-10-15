@@ -434,3 +434,34 @@ El profesor revisará la estructura Maven, el `pom.xml`, el código, las pruebas
 ## Ampliación voluntaria
 
 Solicita una meta de ahorro (`float`) y muestra cuánto falta para alcanzarla después de cada aportación. Si la meta se alcanza, felicita al usuario. Realiza un commit adicional: `feat: incorporar meta de ahorro`.
+
+
+---
+
+## Desarrollo y pruebas del alumno
+
+### Cómo funciona el do-while
+
+El `do-while` ejecuta primero lo que hay dentro y después mira la condición. Por eso la primera aportación siempre se pide. Al final pregunto si quiere otra aportación y, mientras responda S o s (uso `equalsIgnoreCase`), vuelve a empezar. Si responde N, sale del bucle y muestra el resumen.
+
+### Cómo cuento las aportaciones
+
+Tengo un contador `aportaciones` y un acumulador `totalAportado`. Los dos se actualizan después de comprobar que la cantidad es válida, así que una cantidad en 0 o negativa nunca se cuenta. El ahorro actual va sumando cada aportación.
+
+### Validaciones
+
+Si el ahorro inicial es negativo, un `while` lo vuelve a pedir (el 0 vale). Si la aportación es 0 o negativa, otro `while` la vuelve a pedir sin preguntar todavía si quiere continuar.
+
+### Pruebas realizadas
+
+- Prueba 1: inicial 100, aportación 20, N → final 120.0 y 1 aportación.
+- Prueba 2: inicial 100, aportaciones 20 y 25, N → final 145.0 y 2 aportaciones.
+- Prueba 3: inicial 0, aportación 30, N → final 30.0.
+- Prueba 4: aportación -10 y luego 5 → ignoró el -10, final 105.0 y 1 aportación.
+- Prueba 5: aportación 0 y luego 30 → ignoró el 0, final 130.0 y 1 aportación.
+- Prueba 6: inicial 100, aportaciones 20 y 10, respuestas s y luego n → repitió una vez y salió, con 2 aportaciones y ahorro final 130.0.
+- Prueba 7: ahorro inicial -4 y luego 10 → lo volvió a pedir y empezó con 10.
+
+### Dificultades y soluciones
+
+Al escribir `N` cuando el programa esperaba una cantidad me salió `InputMismatchException`. Era un fallo mío al probar: tras una cantidad inválida pide otra cantidad, no la pregunta S/N. También tuve que poner `teclado.nextLine()` después de cada `nextFloat()` para limpiar el Enter, porque si no la pregunta S/N se saltaba sola.
