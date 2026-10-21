@@ -6,10 +6,6 @@ package ies.puerto.es;
  */
 public class DatosPersonales {
 
-    /**
-     * Prueba las funciones con los datos inventados y lo enseña por pantalla.
-     * @param args No se usan
-     */
     public static void main(String[] args) {
         int edad = convertirEdad("21");
         System.out.println("Edad: " + edad);
