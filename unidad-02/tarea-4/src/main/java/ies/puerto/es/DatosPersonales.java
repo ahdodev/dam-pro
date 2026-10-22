@@ -23,7 +23,7 @@ public class DatosPersonales {
         int edad = convertirEdad(sEdad);
         boolean bMatricula = convertirMatricula(sMatricula);
         boolean bMayorEdad = esMayorDeEdad(edad);
-        String ficha = formatearFicha(sNombre,sEdad,sAltura,bMatricula,bMayorEdad);
+        String ficha = formatearFicha(sNombre, edad, dAltura, bMatricula, bMayorEdad);
         System.out.println(ficha);
     }
 
@@ -107,8 +107,8 @@ public class DatosPersonales {
      */
     static String formatearFicha(String sNombre,int edad, double dAltura
                 ,boolean bMatricula, boolean bMayorEdad){
-        return "Ficha:" +sNombre+", edad"+edad+", altura"+ dAltura + ", matricula"+bMatricula+
-                ", mayor de edad"+bMayorEdad;
+        return "Ficha: " + sNombre + ", edad: " + edad + ", altura: " + dAltura +
+                " m, matricula: " + bMatricula + ", mayor de edad: " + bMayorEdad;
 
     }
 }
