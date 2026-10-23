@@ -43,6 +43,11 @@ public class AnalizadorContrasena {
         return numero;
     }
 
+    /**
+     * Función que cuenta el número de minúsculas de una cadena
+     * @param sContrasenia String cadena de texto
+     * @return
+     */
         static int contarMinusculas(String sContrasenia){
             int numero = 0;
             return sContrasenia.length() - contarMayusuculas(sContrasenia) - contarDigitos(sContrasenia) - (contarSimbolos(sContrasenia));
@@ -112,7 +117,7 @@ public class AnalizadorContrasena {
 
     static String generarInforme(String sContrasenia){
         return "Digitos: " + contarDigitos(sContrasenia)
-                + "Resultado: " + esContrasenaValida(sContrasenia);
+                + ", Resultado: " + esContrasenaValida(sContrasenia);
     }
 }
 
