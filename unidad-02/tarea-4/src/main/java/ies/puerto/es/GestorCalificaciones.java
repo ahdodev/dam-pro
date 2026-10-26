@@ -70,16 +70,18 @@ public class GestorCalificaciones {
         }
         return true;
     }
-static Double solicitarNotaValida() {
+
+    /**
+     * Funcion que comprueba si el numero introducido es valido.
+     * @return Devuelve la nota válida.
+     */
+    static Double solicitarNotaValida() {
         Scanner teclado = new Scanner(System.in);
     System.out.println("Introduce una nota: ");
         String sNota = teclado.nextLine();
     Double dNota = null;
 try{
      dNota = convertirNota(sNota);
-
-
-
 } catch (NumberFormatException e) {
     throw new RuntimeException("El numero introducido es incorrecto.");
 
@@ -88,7 +90,13 @@ try{
 boolean bValida = esNotaValida(dNota);
 return dNota;
 }
-static double calcularMedia(List<Double> dNotas){
+
+    /**
+     * Funcion que calcula la media de la lista de notas.
+     * @param dNotas Lista de double que almacena las notas.
+     * @return Devuelve el valor de la media.
+     */
+    static double calcularMedia(List<Double> dNotas){
         double media = 0;
         double suma = 0;
     for (int i = 0; i <dNotas.size() ; i++) {
@@ -97,6 +105,12 @@ static double calcularMedia(List<Double> dNotas){
         media = suma/dNotas.size();
         return media;
 }
+
+    /**
+     * Funcion que obtieme la maxima de la lista de notas
+     * @param lNotas Lista de double que almacena las notas.
+     * @return Devuelve la nota máxima de la lista.
+     */
 
 static double obtenerMaxima(List<Double> lNotas){
         double maximo = 0;
@@ -110,6 +124,12 @@ static double obtenerMaxima(List<Double> lNotas){
     }
         return maximo;
  }
+
+    /**
+     * Funcion que obtieme la minima de la lista de notas
+     * @param lNotas Lista de double que almacena las notas.
+     * @return Devuelve la nota mininma de la lista.
+     */
     static double obtenerMinimo(List<Double> lNotas){
         double minimo = 10;
         for (int i = 0; i < lNotas.size() ; i++) {
