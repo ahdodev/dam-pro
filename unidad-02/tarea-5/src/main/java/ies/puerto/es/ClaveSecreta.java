@@ -8,24 +8,34 @@ public class ClaveSecreta {
     //i I = 2
     //u U = 3
     //e E = *
-    //a A =
+    //a A = ?
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduce la contraseña: ");
-        String sContasenia = teclado.nextLine();
-
+        System.out.println("Introduzca la palabra que desea transformar en clave:");
+        String palabra = teclado.nextLine();
+        String clave = generarClaveSegura(palabra);
+        System.out.println("La clave es: " + clave);
     }
-    static String generarClaveSegura(String sPalabra){
+
+    /**
+     * Remplaza las vocales por otros caracteres
+     * @param sPalabra String
+     * @return String
+     */
+    static String generarClaveSegura (String sPalabra) {
         String clave = "";
 
-        if (sPalabra == null || sPalabra.isEmpty()){
+        if (sPalabra == null || sPalabra.isEmpty()) {
             return "";
         }
-        sPalabra.replace("a", "?");
-        sPalabra.replace("A", "?");
 
+        sPalabra = sPalabra.replace("a", "4");
+        sPalabra = sPalabra.replace("e", "$");
+        sPalabra = sPalabra.replace("i", "1");
+        sPalabra = sPalabra.replace("o", "0");
+        sPalabra = sPalabra.replace("u", "c");
 
-        return clave;
+        return sPalabra;
     }
 }
