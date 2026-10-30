@@ -15,5 +15,6 @@ public final class Main {
      */
     public static void main(String[] argumentos) {
         System.out.println("InvertirCadena: " + InvertirCadena.invertir("Hola Java"));
+        System.out.println("MayorNumero: " + MayorNumero.obtenerMayor("12,-5,89"));
     }
 }
