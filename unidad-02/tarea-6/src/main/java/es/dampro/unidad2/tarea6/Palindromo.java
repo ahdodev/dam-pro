@@ -1,7 +1,10 @@
 package es.dampro.unidad2.tarea6;
 
 /**
- * TODO: documenta el propósito y la responsabilidad de la clase Palindromo.
+ * Clase para saber si un texto es un palíndromo, o sea que se lee
+ * igual del derecho que del revés.
+ * @author ahdodev
+ * @version 1.0.0
  */
 public final class Palindromo {
 
@@ -10,12 +13,32 @@ public final class Palindromo {
     }
 
     /**
-     * TODO: explica el algoritmo y su comportamiento con datos límite.
-     * @param texto Dato de entrada que debe cumplir el contrato del enunciado.
-     * @return Resultado de la comprobación sin distinguir mayúsculas ni espacios.
+     * Función que mira si un texto es un palíndromo. Le quito los espacios,
+     * lo paso a minúsculas y lo comparo con el mismo texto al revés usando
+     * InvertirCadena. Las tildes y los signos sí cuentan. Si se queda vacío
+     * no es palíndromo, y si es null da error.
+     * @param texto String con el texto que queremos comprobar
+     * @return boolean, true si es palíndromo y false si no
      */
     public static boolean esPalindromo(String texto) {
-        // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
-        throw new UnsupportedOperationException("Método pendiente de implementar: esPalindromo");
+        if (texto == null) {
+            throw new IllegalArgumentException("El texto no puede ser null");
+        }
+        //"Luz azul" -> "luzazul"
+        String sLimpio = "";
+        for (int i = 0; i < texto.length(); i++) {
+            char caracter = texto.charAt(i);
+            if (caracter != ' ') {
+                sLimpio = sLimpio + Character.toLowerCase(caracter);
+            }
+        }
+        if (sLimpio.length() == 0) {
+            return false;
+        }
+        String sAlReves = InvertirCadena.invertir(sLimpio);
+        if (sLimpio.equals(sAlReves)) {
+            return true;
+        }
+        return false;
     }
 }
