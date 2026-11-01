@@ -17,6 +17,7 @@ public final class Main {
         System.out.println("InvertirCadena: " + InvertirCadena.invertir("Hola Java"));
         System.out.println("Palindromo: " + Palindromo.esPalindromo("Luz azul"));
         System.out.println("ContadorVocales: " + ContadorVocales.contarVocales("Murciélago"));
+        System.out.println("SumaDigitos: " + SumaDigitos.sumarDigitos("5832"));
         System.out.println("MayorNumero: " + MayorNumero.obtenerMayor("12,-5,89"));
     }
 }
