@@ -1,7 +1,8 @@
 package es.dampro.unidad2.tarea6;
 
 /**
- * TODO: documenta el propósito y la responsabilidad de la clase NumeroPrimo.
+ * @author ahdodev
+ * @version 1.0.0
  */
 public final class NumeroPrimo {
 
@@ -10,12 +11,26 @@ public final class NumeroPrimo {
     }
 
     /**
-     * TODO: explica el algoritmo y su comportamiento con datos límite.
-     * @param numero Dato de entrada que debe cumplir el contrato del enunciado.
-     * @return Verdadero si es primo; falso en otro caso.
+     * Funcion que mira si un numero es primo. Lo paso a int con parseInt y voy probando a dividirlo entre
+     * 2,3,4 hasta el numero anterior. Si alguna division da de resto 0 es que no es primo.
+     * @param numero String con el numero que queremos mirar
+     * @return boolean, true si es primo y false si no
      */
     public static boolean esPrimo(String numero) {
-        // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
-        throw new UnsupportedOperationException("Método pendiente de implementar: esPrimo");
+        if (numero == null || numero.isEmpty()) {
+            throw new IllegalArgumentException("El numero no puede ser null.");
+        }
+        int iNumero = Integer.parseInt(numero);
+        if(iNumero < 2){
+            return false;
+        }
+        for (int i = 2; i <iNumero ; i++) {
+            if (iNumero % i == 0) {
+                return false;
+            }
+
+        }
+        return true;
     }
+
 }

@@ -12,8 +12,8 @@ public final class SumaDigitos {
     }
 
     /**
-     * Función que suma los dígitos de un número, por ejemplo "5832" da 18
-     * porque 5+8+3+2. Voy dígito por dígito, lo paso a int y lo sumo.
+     * Función que suma los dígitos de un número, por ejemplo "5832" da 18.
+     * Voy dígito por dígito, lo paso a int y lo sumo.
      * Si el texto es null, está vacío o tiene algo que no sea un dígito
      * (un signo, una letra o un espacio) da error.
      * @param numero String con el número

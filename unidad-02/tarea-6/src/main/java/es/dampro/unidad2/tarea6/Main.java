@@ -19,5 +19,7 @@ public final class Main {
         System.out.println("ContadorVocales: " + ContadorVocales.contarVocales("Murciélago"));
         System.out.println("SumaDigitos: " + SumaDigitos.sumarDigitos("5832"));
         System.out.println("MayorNumero: " + MayorNumero.obtenerMayor("12,-5,89"));
+        System.out.println("MediaNumeros: " + MediaNumeros.calcularMedia("1234"));
+        System.out.println("NumeroPrimo; " + NumeroPrimo.esPrimo("2"));
     }
 }
