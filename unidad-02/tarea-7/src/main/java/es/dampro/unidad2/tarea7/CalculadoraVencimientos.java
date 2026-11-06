@@ -7,8 +7,8 @@ import java.time.temporal.ChronoUnit;
 /**
  * TODO: Describe la finalidad de CalculadoraVencimientos.
  *
- * @author
- * @version
+ * @author ahdodev
+ * @version 1.0.0
  */
 public final class CalculadoraVencimientos {
     private CalculadoraVencimientos() { }
