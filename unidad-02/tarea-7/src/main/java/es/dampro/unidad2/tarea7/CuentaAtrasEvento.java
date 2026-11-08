@@ -15,7 +15,7 @@ public final class CuentaAtrasEvento {
     /**
      * Programa principal. Calcula los días que faltan desde hoy
      * hasta la salida del GTA VI, el 19 de noviembre de 2026.
-     * @param args argumentos de la línea de comandos (no se usan)
+     * @param args
      */
     public static void main(String[] args) {
         LocalDate salidaGta = LocalDate.of(2026, 11, 19);
