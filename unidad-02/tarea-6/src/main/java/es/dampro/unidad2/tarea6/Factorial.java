@@ -15,6 +15,14 @@ public final class Factorial {
      * @return Factorial del número indicado.
      */
     public static int calcularFactorial(String numero) {
+        if (numero == null ){
+
+        }
+        return numero.length()
+                numero.charAt()
+            int iNumero = Integer.parseInt(numero);
+
+
         // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
         throw new UnsupportedOperationException("Método pendiente de implementar: calcularFactorial");
     }
