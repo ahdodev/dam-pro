@@ -7,8 +7,8 @@ import java.time.temporal.ChronoUnit;
 /**
  * TODO: Describe la finalidad de ComprobadorReservas.
  *
- * @author
- * @version
+ * @author ahdodev
+ * @version 1.0.0
  */
 public final class ComprobadorReservas {
     private ComprobadorReservas() { }
@@ -23,7 +23,8 @@ public final class ComprobadorReservas {
      * @return
      */
     public static boolean haySolapamiento(LocalDateTime inicio1, LocalDateTime fin1, LocalDateTime inicio2, LocalDateTime fin2) {
-        // TODO: Implementa el algoritmo según el enunciado.
+
+
         return false;
     }
 }
