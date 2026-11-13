@@ -26,25 +26,26 @@ public final class Ejercicio09EliminarDuplicados {
      * @return int[] array nuevo sin repetidos
      */
     public static int[] sinDuplicados(int[] numeros) {
-        if (numeros == null) {
+        if (numeros == null || numeros.length == 0) {
             throw new IllegalArgumentException("El array no puede ser null");
         }
-        int[] temporal = new int[numeros.length];
-        int cantidad = 0;
+        int[] unicos = new int[numeros.length];
+        int cuantosUnicos = 0;
         // |3|1|3|2|1|4|
         // |3|1|2|4|
         for (int numero : numeros) {
-            boolean repetido = false;
-            for (int i = 0; i < cantidad; i++) {
-                if (temporal[i] == numero) {
-                    repetido = true;
+            boolean yaEsta = false;
+            for (int i = 0; i < cuantosUnicos; i++) {
+                if (unicos[i] == numero) {
+                    yaEsta = true;
+                    break;
                 }
             }
-            if (!repetido) {
-                temporal[cantidad] = numero;
-                cantidad++;
+            if (!yaEsta) {
+                unicos[cuantosUnicos] = numero;
+                cuantosUnicos++;
             }
         }
-        return Arrays.copyOf(temporal, cantidad);
+        return Arrays.copyOf(unicos, cuantosUnicos);
     }
 }
