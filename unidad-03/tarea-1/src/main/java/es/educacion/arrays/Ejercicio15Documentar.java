@@ -1,8 +1,6 @@
 package es.educacion.arrays;
 
 /**
- * Clase con dos metodos para saber el tamanio de un array
- * y si tiene algun numero dentro.
  * @author ahdodev
  * @version 1.0.0
  */
